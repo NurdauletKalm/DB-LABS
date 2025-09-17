@@ -1,0 +1,16 @@
+Legend: 
+word in Bold with (key sign is) – Primary Key (PK)
+word with (link sign) – Foreign Key
+1–M – One-to-Many relationship
+1–1 – One-to-One relationship
+0..1 – Optional relationship (zero or one)
+
+Airport – Flight: One airport can serve as departure/arrival for many flights (1–M).
+Airline – Flight: One airline operates many flights (1–M).
+Flight – Booking: One flight can have many bookings (1–M).
+Passenger – Booking: One passenger can make many bookings (1–M).
+Booking – BookingChange: A booking may have many changes (1–M).
+Booking – BoardingPass: Each booking may issue at most one boarding pass (1–0..1).
+Booking – Baggage: One booking may include many baggage items (1–M).
+Baggage – BaggageCheck: Each baggage item may be checked multiple times (1–M).
+Passenger – SecurityCheck: One passenger may have multiple security checks (1–M).
